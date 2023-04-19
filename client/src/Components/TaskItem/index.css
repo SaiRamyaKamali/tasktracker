@@ -1,0 +1,38 @@
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 700px;
+    overflow: auto;
+    padding: 20px
+}
+
+.title {
+    margin-right: 20px;
+}
+
+.status {
+    margin-top: 0;
+}
+
+.description {
+    margin-top: 0;
+}
+
+.duedate {
+    font-weight: bold;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-betweeen;
+}
