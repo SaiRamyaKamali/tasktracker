@@ -95,7 +95,7 @@ class Tasks extends Component {
                         <button className="add-task-button" onClick={this.onAddTask}>
                             Click to add your tasks
                         </button>
-                        <select value='Sort Your tasks' onChange={this.handleSortByChange}>
+                        <select className="select1" value='Sort Your tasks' onChange={this.handleSortByChange}>
                             <option value='Sort by'>sort By</option>
                             <option value="due_date">Due Date</option>
                             <option value="title">title</option>

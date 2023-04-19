@@ -2,7 +2,7 @@ import { Component } from 'react';
 import Tasks from '../Tasks';
 import axios from 'axios';
 
-
+import '../../styles.css';
 
 class UserDetails extends Component {
   state = {
@@ -57,17 +57,20 @@ class UserDetails extends Component {
     // Otherwise, render the form
     else {
       return (
-        <div>
+        <div className="form-section">
           <form onSubmit={this.handleSubmit}>
-            <label>
+          <h1 className="heading">Sign In</h1>
+          <div className="input-block">
+            <label className="label">
               Enter Username:
-              <input
+              <input className="input"
                 type="text"
                 value={this.state.username}
                 onChange={this.handleUsernameInputChange}
               />
             </label>
-            <button type="submit">Submit</button>
+            </div>
+            <button type="submit" className="submit-button">Submit</button>
           </form>
         </div>
       );
