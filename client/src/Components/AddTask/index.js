@@ -43,10 +43,10 @@ class AddTask extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Task Tracker</h1>
+            <div className='task-tracker-form'>
+                <h1>Add Your Task</h1>
                 <form onSubmit={this.handleSubmit} className="app">
-                    <input
+                    <input className='input'
                         type="text"
                         placeholder="Title"
                         value={this.state.title}

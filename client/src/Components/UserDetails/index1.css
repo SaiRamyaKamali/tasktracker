@@ -10,7 +10,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: #f2f2f2;
+  background: #f2f2f2
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
 }
 ::selection{
@@ -41,6 +41,10 @@ html,body{
     width: 100%;
     margin-top: 20px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .wrapper form .field input{
     height: 100%;
@@ -129,3 +133,34 @@ html,body{
   form .signup-link a:hover{
     text-decoration: underline;
   }
+
+  button.submit-button {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #4158d0;
+    border: 1px solid;
+    background-color: white;
+}
+
+button.submit-button:hover{
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #2A2F4F
+}
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

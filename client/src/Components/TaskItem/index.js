@@ -30,21 +30,19 @@ const TaskItem = (props) => {
             <div className='top-container'>
                 <div className='header-container'>
                     <h1 className='title'>{title}</h1>
-                    
                 </div>
-            
+                <div className='buttons'>
+                    <button className='edit-icon' onClick={edit}><FontAwesomeIcon icon={faEdit} /></button>
+                    <button className='delete-icon' onClick={deleteTask}><FontAwesomeIcon icon={faTrashAlt} /></button>
+                </div>
             </div>
             <p className='status'>{status}</p>
             <p className='description'>{description}</p>
             <p className='duedate'>by {new Date(dueDate).toISOString().slice(0, 10)}</p>
             {isEdit && <EditTask uniqueNo={uniqueNo} title={title} dueDate={new Date(dueDate).toISOString().slice(0, 10)} status={status} description={description} closeEdit={closeEdit} saveEdit={saveEdit} />}
-        
-            <div className='buttons'>
-                    <button onClick={edit}><FontAwesomeIcon icon={faEdit} /></button>
-                    <button onClick={deleteTask}><FontAwesomeIcon icon={faTrashAlt} /></button>
-                </div>
+
         </div>
-        
+
     )
 }
 

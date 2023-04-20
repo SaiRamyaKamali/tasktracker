@@ -90,20 +90,20 @@ class Tasks extends Component {
         else {
             return (
                 <div className="container">
-                    <h1>Hello, {username}</h1>
-                    <div>
+                    <h1 className="heading">Hello, {username}</h1>
+                    <div className="buttons-container">
                         <button className="add-task-button" onClick={this.onAddTask}>
                             Click to add your tasks
                         </button>
                         <select className="select1" value='Sort Your tasks' onChange={this.handleSortByChange}>
-                            <option value='Sort by'>sort By</option>
+                            <option value='Sort by'>Sort By</option>
                             <option value="due_date">Due Date</option>
                             <option value="title">title</option>
                             <option value="status">Status</option>
                         </select>
 
                     </div>
-                    <button className="add-task-button" onClick={this.onBackClick}>
+                    <button className="add-task-button back" onClick={this.onBackClick}>
                         Back
                     </button>
                     {this.state.isAddTaskVisible && (

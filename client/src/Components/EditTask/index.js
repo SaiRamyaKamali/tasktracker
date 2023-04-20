@@ -44,8 +44,8 @@ class EditTask extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Edit Your Task</h1>
+            <div className='editform'>
+                <p className='edittask'>Edit Your Task</p>
                 <form onSubmit={this.handleSubmit} className="app">
                     <input
                         type="text"

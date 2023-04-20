@@ -34,11 +34,11 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
       }
     ]
-  });
+  });*/
   
   newUser.save()
     .then(() => console.log('User added'))
-    .catch(error => console.error(error));*/
+    .catch(error => console.error(error));
 
 
 //delete users

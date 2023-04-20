@@ -1,18 +1,38 @@
 body{
-    background-color: #343a40;
+    color: #2A2F4F;
 }
+
+.edit-icon{
+    color: #7952b3;
+    width: 30px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.delete-icon{
+    color:#7952b3;
+    width: 30px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
 
 .top-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .bg-container {
+    color:#2A2F4F;
     border-radius: 10px;
     filter: drop-shadow(0 5px 10px 0 #ffffff);
-    width: 400px;
-    height: 410px;
+    width: 500px;
+    margin-bottom:20px;
     background-color: #ffffff;
     padding: 20px;
     position: relative;
@@ -66,6 +86,5 @@ body{
 
 .header-container {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
